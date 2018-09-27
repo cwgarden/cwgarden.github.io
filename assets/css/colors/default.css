@@ -1,0 +1,49 @@
+body {
+    font-size: 13px;
+}
+.float-left {
+    float: left;
+}
+.no-float {
+    float: none;
+}
+.box-size-border {
+    box-sizing: border-box;
+}
+hr.clear {
+    border: 0;
+}
+.clear {
+    clear: both;
+}
+.inline-block {
+    display: inline-block;
+}
+.vertical-middle {
+    vertical-align: middle;
+}
+.navbar-custom {
+    background-color: rgba(20, 40, 10, 0.9);
+}
+.bg-dark{
+    background-color: #2B3D22;
+}
+.bg-light {
+    background-color: #FFE;
+}
+.parallax-bg {
+    background-attachment: scroll;
+}
+.top-bg {
+    background-position: top center;
+}
+.container-front {
+    position: relative;
+    z-index: 1;
+}
+.no-text {
+    font-size:0;
+}
+.em-pad {
+    padding: 1em;
+}

@@ -1,0 +1,159 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <title>2019 Central Wisconsin Garden Expo</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/images/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link href="assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Volkhov:400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link href="assets/lib/animate.css/animate.css" rel="stylesheet">
+    <link href="assets/lib/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/lib/et-line-font/et-line-font.css" rel="stylesheet">
+    <link href="assets/lib/flexslider/flexslider.css" rel="stylesheet">
+    <link href="assets/lib/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/lib/owl.carousel/dist/assets/owl.theme.default.min.css" rel="stylesheet">
+    <link href="assets/lib/magnific-popup/dist/magnific-popup.css" rel="stylesheet">
+    <link href="assets/lib/simple-text-rotator/simpletextrotator.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link id="color-scheme" href="assets/css/colors/default.css" rel="stylesheet">
+  </head>
+  <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+    <main>
+      <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="index.html">CW Lawn &amp; Garden</a>
+          </div>
+          <div class="collapse navbar-collapse" id="custom-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a class="section-scroll" href="#exhibitors">Exhibitors</a></li>
+              <li><a class="section-scroll" href="#about">About</a></li>
+              <li><a class="section-scroll" href="#seminars">Seminars</a></li>
+              <li><a class="section-scroll" href="#sign-up">Sign Up</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section class="bg-dark-30 bg-dark showcase-page-header module parallax-bg" data-background="assets/images/Cover-01-2.jpg">
+        <div class="titan-caption">
+          <div class="caption-content">
+            <div class="font-alt mb-30 titan-title-size-1"><img src="assets/images/ExpoLogo.svg" style="width: 500px" /></div>
+            <div class="font-alt mb-40 titan-title-size-4">2019 Central Wisconsin<br />Lawn and Garden Show</div>
+            <div class="font-alt mb-30 titan-title-size-2">March 16th, 2019</div>
+            <a class="section-scroll btn btn-border-w btn-round" href="#sign-up">Sign Up</a>
+          </div>
+        </div>
+      </section>
+      <div class="main showcase-page">
+        <section class="module-small" id="exhibitors">
+          <div class="container">
+            <h2 class="module-title font-alt">Exhibitors</h2>
+            <div class="row multi-columns-row">
+              <div class="row">{% for myPage in site.pages %}{% if myPage.dir contains "/vendors" %}<div class="col-md-4 col-sm-6 col-xs-12 no-float inline-block vertical-middle"><a class="content-box" href="{{  myPage.link }}"><div class="content-box-image"><img src="{% if myPage.image contains "http" %}{% else %}{{ myPage.dir }}/{% endif %}{{ myPage.image }}" alt="{{ myPage.title }}" class="em-pad"/><h3 class="content-box-title font-serif">{{ myPage.title }}</h3>{{ myPage.content | markdownify }}</div></a></div>{% endif %}{% endfor %}</div>
+            </div>
+          </div>
+        </section>
+        <section class="bg-dark-30 bg-dark module-small parallax-bg top-bg" data-background="assets/images/hands-holding.jpg" id="about">
+          <div class="container container-front">
+            <h2 class="module-title font-alt">About</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet dapibus enim, a aliquet dui. Nullam a aliquet arcu, in fermentum dolor. Praesent hendrerit elit vel urna scelerisque, ut scelerisque ipsum sagittis. Praesent mollis efficitur velit, ac faucibus odio congue molestie. Aliquam vitae felis dui. Pellentesque sit amet aliquet nunc, a aliquam tortor. Donec turpis ante, tempor vel porttitor eu, ornare et sapien. Proin luctus est sagittis, pellentesque tortor at, ultricies tortor. Nunc non lacus hendrerit risus aliquam tempus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse eget posuere orci. Nunc lobortis nec tortor eget semper. Duis pharetra, sem pharetra aliquet feugiat, velit eros placerat magna, ut imperdiet turpis sem id turpis. Pellentesque id nunc lorem. Cras interdum mauris sit amet orci imperdiet, nec laoreet metus rutrum.
+            </p>
+            <p>
+              Praesent condimentum sit amet nisl lacinia laoreet. Integer varius, lectus ut condimentum elementum, orci diam accumsan ante, eu semper purus dolor sed nisl. Nunc laoreet efficitur mauris, at commodo augue varius eget. Mauris ultricies, leo non consequat suscipit, odio leo dapibus felis, a porttitor felis mauris varius libero. Proin luctus eu velit non rhoncus. In in faucibus dui, id hendrerit eros. Integer molestie justo sed consequat bibendum. Sed quis suscipit elit. Aenean fermentum nec felis sed tincidunt. Nunc in molestie quam, non lobortis turpis. Quisque feugiat sapien dictum urna viverra egestas.
+            </p>
+            <p>
+              Proin in magna augue. Mauris ornare velit a placerat interdum. Vestibulum vehicula, nulla nec efficitur lacinia, nisi nibh aliquet diam, non egestas sapien orci sit amet lectus. Vestibulum ornare vulputate nunc, eget sagittis lorem venenatis id. Praesent quis dignissim lacus. In dictum ipsum turpis, pellentesque tempus ex hendrerit at. In rhoncus sollicitudin massa, non sodales nisi tempor sed. Mauris mattis, dolor in imperdiet sollicitudin, elit enim pellentesque neque, et gravida nisi diam vitae lorem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris vel ante elementum, euismod est volutpat, ultrices mi. Sed scelerisque ipsum est, in aliquet libero auctor ut. Donec facilisis feugiat elit quis efficitur. Duis maximus ornare augue et suscipit. Etiam efficitur enim ex.
+            </p>
+          </div>
+        </section>
+        <section class="module-small" id="seminars">
+          <div class="container">
+            <h2 class="module-title font-alt">Seminars</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet dapibus enim, a aliquet dui. Nullam a aliquet arcu, in fermentum dolor. Praesent hendrerit elit vel urna scelerisque, ut scelerisque ipsum sagittis. Praesent mollis efficitur velit, ac faucibus odio congue molestie. Aliquam vitae felis dui. Pellentesque sit amet aliquet nunc, a aliquam tortor. Donec turpis ante, tempor vel porttitor eu, ornare et sapien. Proin luctus est sagittis, pellentesque tortor at, ultricies tortor. Nunc non lacus hendrerit risus aliquam tempus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse eget posuere orci. Nunc lobortis nec tortor eget semper. Duis pharetra, sem pharetra aliquet feugiat, velit eros placerat magna, ut imperdiet turpis sem id turpis. Pellentesque id nunc lorem. Cras interdum mauris sit amet orci imperdiet, nec laoreet metus rutrum.
+            </p>
+            <p>
+              Praesent condimentum sit amet nisl lacinia laoreet. Integer varius, lectus ut condimentum elementum, orci diam accumsan ante, eu semper purus dolor sed nisl. Nunc laoreet efficitur mauris, at commodo augue varius eget. Mauris ultricies, leo non consequat suscipit, odio leo dapibus felis, a porttitor felis mauris varius libero. Proin luctus eu velit non rhoncus. In in faucibus dui, id hendrerit eros. Integer molestie justo sed consequat bibendum. Sed quis suscipit elit. Aenean fermentum nec felis sed tincidunt. Nunc in molestie quam, non lobortis turpis. Quisque feugiat sapien dictum urna viverra egestas.
+            </p>
+            <p>
+              Proin in magna augue. Mauris ornare velit a placerat interdum. Vestibulum vehicula, nulla nec efficitur lacinia, nisi nibh aliquet diam, non egestas sapien orci sit amet lectus. Vestibulum ornare vulputate nunc, eget sagittis lorem venenatis id. Praesent quis dignissim lacus. In dictum ipsum turpis, pellentesque tempus ex hendrerit at. In rhoncus sollicitudin massa, non sodales nisi tempor sed. Mauris mattis, dolor in imperdiet sollicitudin, elit enim pellentesque neque, et gravida nisi diam vitae lorem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris vel ante elementum, euismod est volutpat, ultrices mi. Sed scelerisque ipsum est, in aliquet libero auctor ut. Donec facilisis feugiat elit quis efficitur. Duis maximus ornare augue et suscipit. Etiam efficitur enim ex.
+            </p>
+          </div>
+        </section>
+        <section class="bg-dark-30 bg-dark module-small parallax-bg" data-background="assets/images/orto-in-casa-2000x1200.jpg" id="sign-up">
+          <div class="container container-front">
+            <h2 class="module-title font-alt">Sign Up</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet dapibus enim, a aliquet dui. Nullam a aliquet arcu, in fermentum dolor. Praesent hendrerit elit vel urna scelerisque, ut scelerisque ipsum sagittis. Praesent mollis efficitur velit, ac faucibus odio congue molestie. Aliquam vitae felis dui. Pellentesque sit amet aliquet nunc, a aliquam tortor. Donec turpis ante, tempor vel porttitor eu, ornare et sapien. Proin luctus est sagittis, pellentesque tortor at, ultricies tortor. Nunc non lacus hendrerit risus aliquam tempus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse eget posuere orci. Nunc lobortis nec tortor eget semper. Duis pharetra, sem pharetra aliquet feugiat, velit eros placerat magna, ut imperdiet turpis sem id turpis. Pellentesque id nunc lorem. Cras interdum mauris sit amet orci imperdiet, nec laoreet metus rutrum.
+            </p>
+            <p>
+              Praesent condimentum sit amet nisl lacinia laoreet. Integer varius, lectus ut condimentum elementum, orci diam accumsan ante, eu semper purus dolor sed nisl. Nunc laoreet efficitur mauris, at commodo augue varius eget. Mauris ultricies, leo non consequat suscipit, odio leo dapibus felis, a porttitor felis mauris varius libero. Proin luctus eu velit non rhoncus. In in faucibus dui, id hendrerit eros. Integer molestie justo sed consequat bibendum. Sed quis suscipit elit. Aenean fermentum nec felis sed tincidunt. Nunc in molestie quam, non lobortis turpis. Quisque feugiat sapien dictum urna viverra egestas.
+            </p>
+            <p>
+              Proin in magna augue. Mauris ornare velit a placerat interdum. Vestibulum vehicula, nulla nec efficitur lacinia, nisi nibh aliquet diam, non egestas sapien orci sit amet lectus. Vestibulum ornare vulputate nunc, eget sagittis lorem venenatis id. Praesent quis dignissim lacus. In dictum ipsum turpis, pellentesque tempus ex hendrerit at. In rhoncus sollicitudin massa, non sodales nisi tempor sed. Mauris mattis, dolor in imperdiet sollicitudin, elit enim pellentesque neque, et gravida nisi diam vitae lorem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris vel ante elementum, euismod est volutpat, ultrices mi. Sed scelerisque ipsum est, in aliquet libero auctor ut. Donec facilisis feugiat elit quis efficitur. Duis maximus ornare augue et suscipit. Etiam efficitur enim ex.
+            </p>
+          </div>
+        </section>
+        <section class="module-extra-small bg-dark">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center">
+                <p>
+                  <img src="assets/images/ExpoLogoTransparency.svg" alt="Central Wisconsin Convention + Expo Center" style="height: 70px" />
+                </p>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center">
+                    <p>
+                      10101 MARKET STREET, MAILBOX #A20<br/>
+                      ROTHSCHILD, WI 54474<br/>
+                      P: 715-298-2726   F: 715-298-3616
+                    </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div>
+    </main>
+    
+    <script src="assets/lib/jquery/dist/jquery.js"></script>
+    <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/lib/wow/dist/wow.js"></script>
+    <script src="assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js"></script>
+    <script src="assets/lib/isotope/dist/isotope.pkgd.js"></script>
+    <script src="assets/lib/imagesloaded/imagesloaded.pkgd.js"></script>
+    <script src="assets/lib/flexslider/jquery.flexslider.js"></script>
+    <script src="assets/lib/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="assets/lib/smoothscroll.js"></script>
+    <script src="assets/lib/magnific-popup/dist/jquery.magnific-popup.js"></script>
+    <script src="assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
