@@ -1,6 +1,9 @@
 body {
     font-size: 13px;
 }
+.bg-dark-50:before {
+    background: rgba(10, 10, 10, 0.65);
+}
 .float-left {
     float: left;
 }

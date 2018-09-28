@@ -54,7 +54,7 @@ layout: compress
               <li><a class="section-scroll" href="#exhibitors">Exhibitors</a></li>
               <li><a class="section-scroll" href="#about">About</a></li>
               <li><a class="section-scroll" href="#seminars">Seminars</a></li>
-              <li><a class="section-scroll" href="#sign-up">Sign Up</a></li>
+              <li><a class="section-scroll" href="#sign-up">Become a Vendor</a></li>
             </ul>
           </div>
         </div>
@@ -65,58 +65,77 @@ layout: compress
             <div class="font-alt mb-30 titan-title-size-1"><img src="assets/images/ExpoLogo.svg" style="width: 500px" /></div>
             <div class="font-alt mb-40 titan-title-size-4">2019 Central Wisconsin<br />Lawn and Garden Show</div>
             <div class="font-alt mb-30 titan-title-size-2">March 16th, 2019</div>
-            <a class="section-scroll btn btn-border-w btn-round" href="#sign-up">Sign Up</a>
+            <a class="section-scroll btn btn-border-w btn-round" href="assets/pdf/Vendor Application Packet.pdf">Vendor Application</a>
           </div>
         </div>
       </section>
       <div class="main showcase-page">
         <section class="module-small" id="exhibitors">
           <div class="container">
-            <h2 class="module-title font-alt">Exhibitors</h2>
+            <h1 class="module-title font-alt">Exhibitors</h1>
             <div class="row multi-columns-row">
               <div class="row">{% for myPage in site.pages %}{% if myPage.dir contains "/vendors" %}<div class="col-md-4 col-sm-6 col-xs-12 no-float inline-block vertical-middle"><a class="content-box" href="{{  myPage.link }}"><div class="content-box-image"><img src="{% if myPage.image contains "http" %}{% else %}{{ myPage.dir }}/{% endif %}{{ myPage.image }}" alt="{{ myPage.title }}" class="em-pad"/><h3 class="content-box-title font-serif">{{ myPage.title }}</h3>{{ myPage.content | markdownify }}</div></a></div>{% endif %}{% endfor %}</div>
             </div>
+            <h2 class="content-box-title font-serif text-center">And More!</h2>
           </div>
         </section>
-        <section class="bg-dark-30 bg-dark module-small parallax-bg top-bg" data-background="assets/images/hands-holding.jpg" id="about">
+        <section class="bg-dark-30 bg-dark-50 bg-dark module-small parallax-bg top-bg" data-background="assets/images/hands-holding.jpg" id="about">
           <div class="container container-front">
-            <h2 class="module-title font-alt">About</h2>
+            <h1 class="module-title font-alt">About</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet dapibus enim, a aliquet dui. Nullam a aliquet arcu, in fermentum dolor. Praesent hendrerit elit vel urna scelerisque, ut scelerisque ipsum sagittis. Praesent mollis efficitur velit, ac faucibus odio congue molestie. Aliquam vitae felis dui. Pellentesque sit amet aliquet nunc, a aliquam tortor. Donec turpis ante, tempor vel porttitor eu, ornare et sapien. Proin luctus est sagittis, pellentesque tortor at, ultricies tortor. Nunc non lacus hendrerit risus aliquam tempus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse eget posuere orci. Nunc lobortis nec tortor eget semper. Duis pharetra, sem pharetra aliquet feugiat, velit eros placerat magna, ut imperdiet turpis sem id turpis. Pellentesque id nunc lorem. Cras interdum mauris sit amet orci imperdiet, nec laoreet metus rutrum.
-            </p>
-            <p>
-              Praesent condimentum sit amet nisl lacinia laoreet. Integer varius, lectus ut condimentum elementum, orci diam accumsan ante, eu semper purus dolor sed nisl. Nunc laoreet efficitur mauris, at commodo augue varius eget. Mauris ultricies, leo non consequat suscipit, odio leo dapibus felis, a porttitor felis mauris varius libero. Proin luctus eu velit non rhoncus. In in faucibus dui, id hendrerit eros. Integer molestie justo sed consequat bibendum. Sed quis suscipit elit. Aenean fermentum nec felis sed tincidunt. Nunc in molestie quam, non lobortis turpis. Quisque feugiat sapien dictum urna viverra egestas.
-            </p>
-            <p>
-              Proin in magna augue. Mauris ornare velit a placerat interdum. Vestibulum vehicula, nulla nec efficitur lacinia, nisi nibh aliquet diam, non egestas sapien orci sit amet lectus. Vestibulum ornare vulputate nunc, eget sagittis lorem venenatis id. Praesent quis dignissim lacus. In dictum ipsum turpis, pellentesque tempus ex hendrerit at. In rhoncus sollicitudin massa, non sodales nisi tempor sed. Mauris mattis, dolor in imperdiet sollicitudin, elit enim pellentesque neque, et gravida nisi diam vitae lorem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris vel ante elementum, euismod est volutpat, ultrices mi. Sed scelerisque ipsum est, in aliquet libero auctor ut. Donec facilisis feugiat elit quis efficitur. Duis maximus ornare augue et suscipit. Etiam efficitur enim ex.
+              The Central Wisconsin Lawn &amp; Garden show welcomes some of Wisconsin's finest professionals specializing in landscaping, lawn design, lawn care, deck and patio building, pool and spa installation, lawn and garden equipment, landscaping equipment, plants, bulbs, and so much more.
             </p>
           </div>
         </section>
         <section class="module-small" id="seminars">
           <div class="container">
-            <h2 class="module-title font-alt">Seminars</h2>
+            <h1 class="module-title font-alt">Seminars</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet dapibus enim, a aliquet dui. Nullam a aliquet arcu, in fermentum dolor. Praesent hendrerit elit vel urna scelerisque, ut scelerisque ipsum sagittis. Praesent mollis efficitur velit, ac faucibus odio congue molestie. Aliquam vitae felis dui. Pellentesque sit amet aliquet nunc, a aliquam tortor. Donec turpis ante, tempor vel porttitor eu, ornare et sapien. Proin luctus est sagittis, pellentesque tortor at, ultricies tortor. Nunc non lacus hendrerit risus aliquam tempus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse eget posuere orci. Nunc lobortis nec tortor eget semper. Duis pharetra, sem pharetra aliquet feugiat, velit eros placerat magna, ut imperdiet turpis sem id turpis. Pellentesque id nunc lorem. Cras interdum mauris sit amet orci imperdiet, nec laoreet metus rutrum.
+              Seminars will be held throughout
+              the show with topics ranging from
+              how to create your dream garden
+              to lawn equipment demonstrations.
             </p>
-            <p>
-              Praesent condimentum sit amet nisl lacinia laoreet. Integer varius, lectus ut condimentum elementum, orci diam accumsan ante, eu semper purus dolor sed nisl. Nunc laoreet efficitur mauris, at commodo augue varius eget. Mauris ultricies, leo non consequat suscipit, odio leo dapibus felis, a porttitor felis mauris varius libero. Proin luctus eu velit non rhoncus. In in faucibus dui, id hendrerit eros. Integer molestie justo sed consequat bibendum. Sed quis suscipit elit. Aenean fermentum nec felis sed tincidunt. Nunc in molestie quam, non lobortis turpis. Quisque feugiat sapien dictum urna viverra egestas.
-            </p>
-            <p>
-              Proin in magna augue. Mauris ornare velit a placerat interdum. Vestibulum vehicula, nulla nec efficitur lacinia, nisi nibh aliquet diam, non egestas sapien orci sit amet lectus. Vestibulum ornare vulputate nunc, eget sagittis lorem venenatis id. Praesent quis dignissim lacus. In dictum ipsum turpis, pellentesque tempus ex hendrerit at. In rhoncus sollicitudin massa, non sodales nisi tempor sed. Mauris mattis, dolor in imperdiet sollicitudin, elit enim pellentesque neque, et gravida nisi diam vitae lorem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris vel ante elementum, euismod est volutpat, ultrices mi. Sed scelerisque ipsum est, in aliquet libero auctor ut. Donec facilisis feugiat elit quis efficitur. Duis maximus ornare augue et suscipit. Etiam efficitur enim ex.
-            </p>
+            <p>As information becomes available, it will be posted here.</p>
           </div>
         </section>
-        <section class="bg-dark-30 bg-dark module-small parallax-bg" data-background="assets/images/orto-in-casa-2000x1200.jpg" id="sign-up">
+        <section class="bg-dark-30 bg-dark-50 bg-dark module-small parallax-bg" data-background="assets/images/orto-in-casa-2000x1200.jpg" id="sign-up">
           <div class="container container-front">
-            <h2 class="module-title font-alt">Sign Up</h2>
+            <h1 class="module-title font-alt">Become a Vendor</h1>
+            <h2>Calling all vendors!</h2>
+            <p>The lawn &amp; garden show is back by popular demand and we want <strong>YOU</strong> to be part of it!</p>
+            <h2>Event Details</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet dapibus enim, a aliquet dui. Nullam a aliquet arcu, in fermentum dolor. Praesent hendrerit elit vel urna scelerisque, ut scelerisque ipsum sagittis. Praesent mollis efficitur velit, ac faucibus odio congue molestie. Aliquam vitae felis dui. Pellentesque sit amet aliquet nunc, a aliquam tortor. Donec turpis ante, tempor vel porttitor eu, ornare et sapien. Proin luctus est sagittis, pellentesque tortor at, ultricies tortor. Nunc non lacus hendrerit risus aliquam tempus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse eget posuere orci. Nunc lobortis nec tortor eget semper. Duis pharetra, sem pharetra aliquet feugiat, velit eros placerat magna, ut imperdiet turpis sem id turpis. Pellentesque id nunc lorem. Cras interdum mauris sit amet orci imperdiet, nec laoreet metus rutrum.
+              <strong>Vendor Registration / Check-In / Setup</strong><br />
+              Friday: 9:00AM - 7:00PM
             </p>
             <p>
-              Praesent condimentum sit amet nisl lacinia laoreet. Integer varius, lectus ut condimentum elementum, orci diam accumsan ante, eu semper purus dolor sed nisl. Nunc laoreet efficitur mauris, at commodo augue varius eget. Mauris ultricies, leo non consequat suscipit, odio leo dapibus felis, a porttitor felis mauris varius libero. Proin luctus eu velit non rhoncus. In in faucibus dui, id hendrerit eros. Integer molestie justo sed consequat bibendum. Sed quis suscipit elit. Aenean fermentum nec felis sed tincidunt. Nunc in molestie quam, non lobortis turpis. Quisque feugiat sapien dictum urna viverra egestas.
+              <strong>Show Hours</strong><br />
+              Saturday: 10:00AM - 6:00PM<br />
+              Sunday: 10:00AM - 3:00PM
             </p>
             <p>
-              Proin in magna augue. Mauris ornare velit a placerat interdum. Vestibulum vehicula, nulla nec efficitur lacinia, nisi nibh aliquet diam, non egestas sapien orci sit amet lectus. Vestibulum ornare vulputate nunc, eget sagittis lorem venenatis id. Praesent quis dignissim lacus. In dictum ipsum turpis, pellentesque tempus ex hendrerit at. In rhoncus sollicitudin massa, non sodales nisi tempor sed. Mauris mattis, dolor in imperdiet sollicitudin, elit enim pellentesque neque, et gravida nisi diam vitae lorem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris vel ante elementum, euismod est volutpat, ultrices mi. Sed scelerisque ipsum est, in aliquet libero auctor ut. Donec facilisis feugiat elit quis efficitur. Duis maximus ornare augue et suscipit. Etiam efficitur enim ex.
+              <strong>Move Out</strong><br />
+              Sunday: 3:00PM - 7:00PM
+            </p>
+            <h2>Featured Exhibitor</h2>
+            <p><strong>Stand Out to the Crowd!</strong></p>
+            <p>Be a Featured Exhibitor for only an additional price of $250</p>
+            <p><strong>What is a Featured Exhibitor?</strong></p>
+            <p>Featured Exhibitors will receive the following:</p>
+            <ul>
+              <li>Logo on all printed advertising</li>
+              <li>Name, description of company, and link to company website listed on the Lawn & Garden website.</li>
+              <li>Oppourtunity to be a seminar speaker</li>
+              <li>4 <strong>FREE</strong> admission tickets</li>
+            </ul>
+            <h2>Information and Application</h2>
+            <ul>
+              <li><a href="assets/pdf/Vendor Brochure.pdf">Vendor Brochure</a></li>
+              <li><a href="assets/pdf/Vendor Flyer.pdf">Vendor Flyer</a></li>
+            </ul>
+            <p>
+              <a class="section-scroll btn btn-border-w btn-round" href="assets/pdf/Vendor Application Packet.pdf">Sign Up</a>
             </p>
           </div>
         </section>
