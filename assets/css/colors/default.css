@@ -1,6 +1,9 @@
 body {
     font-size: 13px;
 }
+.parallax-bg {
+    background-position: center;
+}
 .bg-dark-50:before {
     background: rgba(10, 10, 10, 0.65);
 }
@@ -34,9 +37,13 @@ hr.clear {
 .bg-light {
     background-color: #FFE;
 }
-.parallax-bg {
-    background-attachment: scroll;
+
+@supports (-webkit-overflow-scrolling: touch) {
+    .parallax-bg {
+        background-attachment: scroll;
+    }
 }
+
 .top-bg {
     background-position: top center;
 }
