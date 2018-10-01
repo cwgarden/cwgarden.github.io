@@ -67,7 +67,7 @@ layout: compress
           <div class="container">
             <h1 class="module-title font-alt">Exhibitors</h1>
             <div class="row multi-columns-row">
-              <div class="row">{% for myPage in site.pages %}{% if myPage.dir contains "/vendors" %}<div class="col-md-4 col-sm-6 col-xs-12 no-float inline-block vertical-middle"><a class="content-box" href="{{  myPage.link }}"><div class="content-box-image"><img src="{% if myPage.image contains "http" %}{% else %}{{ myPage.dir }}/{% endif %}{{ myPage.image }}" alt="{{ myPage.title }}" class="em-pad"/><h3 class="content-box-title font-serif">{{ myPage.title }}</h3>{{ myPage.content | markdownify }}</div></a></div>{% endif %}{% endfor %}</div>
+              <div class="row">{% for myPage in site.pages %}{% if myPage.dir contains "/vendors" %}{% if myPage.image != "" %}<div class="col-md-4 col-sm-6 col-xs-12 no-float inline-block vertical-middle"><a class="content-box" href="{{  myPage.link }}"><div class="content-box-image"><img src="{% if myPage.image contains "http" %}{% else %}{{ myPage.dir }}/{% endif %}{{ myPage.image }}" alt="{{ myPage.title }}" class="em-pad"/><h3 class="content-box-title font-serif">{{ myPage.title }}</h3>{{ myPage.content | markdownify }}</div></a></div>{% endif %}{% endif %}{% endfor %}</div>
             </div>
             <h2 class="content-box-title font-serif text-center">And More!</h2>
           </div>
