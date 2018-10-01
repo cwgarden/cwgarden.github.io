@@ -6,5 +6,5 @@ title: Example Vendor
 link: http://example.com
 image: example.jpg
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.`
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 ```
