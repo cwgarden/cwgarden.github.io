@@ -4,6 +4,9 @@ body {
 .parallax-bg {
     background-position: center;
 }
+.content-box-image {
+    background-color: #FFF;
+}
 .bg-dark-50:before {
     background: rgba(10, 10, 10, 0.65);
 }

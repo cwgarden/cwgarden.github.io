@@ -33,7 +33,7 @@ layout: compress
     <link href="assets/lib/simple-text-rotator/simpletextrotator.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/webfont/cwlawngarden/style.css" rel="stylesheet">
-    <link id="color-scheme" href="assets/css/colors/default.css" rel="stylesheet">
+    <link id="color-scheme" href="assets/css/colors/default.css?{{ site.time }}" rel="stylesheet">
   </head>
   <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
     <main>
@@ -44,6 +44,7 @@ layout: compress
           </div>
           <div class="collapse navbar-collapse" id="custom-collapse">
             <ul class="nav navbar-nav navbar-right">
+              <li><a class="section-scroll" href="#sponsors">Sponsors</a></li>
               <li><a class="section-scroll" href="#exhibitors">Featured Exhibitors</a></li>
               <li><a class="section-scroll" href="#about">About</a></li>
               <li><a class="section-scroll" href="#seminars">Seminars</a></li>
@@ -58,22 +59,36 @@ layout: compress
             <div class="font-alt mb-30 titan-title-size-1"><img src="assets/images/ExpoLogo.svg" style="width: 500px" /></div>
             <div class="font-alt mb-40 titan-title-size-4">2019 Central Wisconsin<br />Lawn and Garden Show</div>
             <div class="font-alt mb-30 titan-title-size-2">March 16th & 17th, 2019</div>
-            <a class="section-scroll btn btn-border-w btn-round" href="assets/pdf/Vendor Application Packet.pdf">Vendor Application</a>
+            <p>Saturday: 10:00AM - 6:00PM<br />
+            Sunday: 10:00AM - 3:00PM</p>
+            <p>Admission is $6 for adults or two for $10 and free for children 12 and under.</p>
+            <p>
+              Each admission enters you for a chance to win the ultimate lawn and garden package with additional tickets available to purchase to better your chances to win.
+            </p>
+            <a class="section-scroll btn btn-border-w btn-round" target="_blank" href="assets/pdf/Vendor Application Packet.pdf">Vendor Application</a>
           </div>
         </div>
       </section>
       <div class="main showcase-page">
+        <section class="module-small bg-dark" id="sponsors">
+          <div class="container">
+            <h1 class="module-title font-alt">Sponsors</h1>
+            <div class="row multi-columns-row">
+              <div class="row text-center">{% for myPage in site.pages %}{% if myPage.dir contains "/sponsors" %}{% if myPage.image != "" %}<div class="col-md-4 col-sm-6 col-xs-12 no-float inline-block vertical-middle"><a target="_blank" class="content-box" href="{{  myPage.link }}"><div class="content-box-image"><img src="{% if myPage.image contains "http" %}{% else %}{{ myPage.dir }}/{% endif %}{{ myPage.image }}" alt="{{ myPage.title }}" class="em-pad"/><h3 class="content-box-title font-serif">{{ myPage.title }}</h3>{{ myPage.content | markdownify }}</div></a></div>{% endif %}{% endif %}{% endfor %}</div>
+            </div>
+          </div>
+        </section>
         <section class="module-small" id="exhibitors">
           <div class="container">
             <h1 class="module-title font-alt">Exhibitors</h1>
             <div class="row multi-columns-row">
-              <div class="row">{% for myPage in site.pages %}{% if myPage.dir contains "/vendors" %}{% if myPage.image != "" %}<div class="col-md-4 col-sm-6 col-xs-12 no-float inline-block vertical-middle"><a class="content-box" href="{{  myPage.link }}"><div class="content-box-image"><img src="{% if myPage.image contains "http" %}{% else %}{{ myPage.dir }}/{% endif %}{{ myPage.image }}" alt="{{ myPage.title }}" class="em-pad"/><h3 class="content-box-title font-serif">{{ myPage.title }}</h3>{{ myPage.content | markdownify }}</div></a></div>{% endif %}{% endif %}{% endfor %}</div>
+              <div class="row text-center">{% for myPage in site.pages %}{% if myPage.dir contains "/vendors" %}{% if myPage.image != "" %}<div class="col-md-4 col-sm-6 col-xs-12 no-float inline-block vertical-middle"><a target="_blank" class="content-box" href="{{  myPage.link }}"><div class="content-box-image"><img src="{% if myPage.image contains "http" %}{% else %}{{ myPage.dir }}/{% endif %}{{ myPage.image }}" alt="{{ myPage.title }}" class="em-pad"/><h3 class="content-box-title font-serif">{{ myPage.title }}</h3>{{ myPage.content | markdownify }}</div></a></div>{% endif %}{% endif %}{% endfor %}</div>
             </div>
             <h2 class="content-box-title font-serif text-center">And More!</h2>
           </div>
         </section>
         <section class="bg-dark-30 bg-dark-50 bg-dark module-small parallax-bg top-bg" data-background="assets/images/hands-holding.jpg" id="about">
-          <div class="container container-front">
+          <div class="container container-front text-center">
             <h1 class="module-title font-alt">About</h1>
             <p>
               The Central Wisconsin Lawn &amp; Garden show welcomes some of Wisconsin's finest professionals specializing in landscaping, lawn design, lawn care, deck and patio building, pool and spa installation, lawn and garden equipment, landscaping equipment, plants, bulbs, and so much more.
@@ -81,7 +96,7 @@ layout: compress
           </div>
         </section>
         <section class="module-small" id="seminars">
-          <div class="container">
+          <div class="container text-center">
             <h1 class="module-title font-alt">Seminars</h1>
             <p>
               Seminars will be held throughout
@@ -114,7 +129,7 @@ layout: compress
             <h2>Featured Exhibitor</h2>
             <p><strong>Stand Out to the Crowd!</strong></p>
             <p>Be a Featured Exhibitor for only an additional price of $250</p>
-            <p><strong>What is a Featured Exhibitor?</strong></p>
+            <h2>What is a Featured Exhibitor?</strong></h2>
             <p>Featured Exhibitors will receive the following:</p>
             <ul>
               <li>Logo on all printed advertising</li>
@@ -122,18 +137,7 @@ layout: compress
               <li>Oppourtunity to be a seminar speaker</li>
               <li>4 <strong>FREE</strong> admission tickets</li>
             </ul>
-            <h2>The Ultimate Lawn &amp; Garden Package</h2>
-            <p>
-              Vendor Items (Lawn and
-              Garden related) will be
-              accepted for the ultimate lawn
-              &amp; garden package. This
-              package will be raffled off
-              during the show with proceeds
-              going to a local charity.
-            </p>
-              <a class="section-scroll btn btn-border-w btn-round" href="assets/pdf/Vendor Application Packet.pdf">Apply Today!</a>
-            </p>
+            <a class="section-scroll btn btn-border-w btn-round" target="_blank" href="assets/pdf/Vendor Application Packet.pdf">Apply Today!</a>
           </div>
         </section>
         <section class="module-extra-small bg-dark">
