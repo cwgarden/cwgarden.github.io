@@ -60,3 +60,6 @@ hr.clear {
 .em-pad {
     padding: 1em;
 }
+.em-pad-lr {
+    padding: 0 1em;
+}
