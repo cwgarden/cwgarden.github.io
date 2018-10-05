@@ -84,7 +84,7 @@ layout: compress
             <div class="row multi-columns-row">
               <div class="row text-center">{% for myPage in site.pages %}{% if myPage.dir contains "/vendors" %}{% if myPage.image != "" %}<div class="col-md-4 col-sm-6 col-xs-12 no-float inline-block vertical-middle"><a target="_blank" class="content-box" href="{{  myPage.link }}"><div class="content-box-image"><img src="{% if myPage.image contains "http" %}{% else %}{{ myPage.dir }}/{% endif %}{{ myPage.image }}" alt="{{ myPage.title }}" class="em-pad"/><h3 class="content-box-title font-serif">{{ myPage.title }}</h3>{{ myPage.content | markdownify }}</div></a></div>{% endif %}{% endif %}{% endfor %}</div>
             </div>
-            <h2 class="content-box-title font-serif text-center">And More!</h2>
+            <!--<h2 class="content-box-title font-serif text-center">And More!</h2>-->
           </div>
         </section>
         <section class="bg-dark-30 bg-dark-50 bg-dark module-small parallax-bg top-bg" data-background="assets/images/hands-holding.jpg" id="about">
