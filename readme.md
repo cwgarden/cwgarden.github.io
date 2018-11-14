@@ -11,7 +11,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 ```
 
 ## adding sponsors to the sponsor list
-To add vendors to the sponsor list, you can create markdown files in the `sponsors` folder with the following format:
+To add sponsors to the sponsor list, you can create markdown files in the `sponsors` folder with the following format:
 
 ```markdown
 ---
