@@ -57,6 +57,8 @@ layout: compress
               <li><a class="section-scroll" href="#exhibitors">Featured Exhibitors</a></li>
               <li><a class="section-scroll" href="#about">About</a></li>
               <li><a class="section-scroll" href="#seminars">Seminars</a></li>
+              <li><a class="section-scroll" href="#farmers">Farmer's Market</a></li>
+              <li><a class="section-scroll" href="#vendors">All Vendors</a></li>
               <li><a class="section-scroll" href="#sign-up">Become a Vendor</a></li>
             </ul>
           </div>
@@ -89,7 +91,7 @@ layout: compress
         </section>
         <section class="module-small" id="exhibitors">
           <div class="container">
-            <h1 class="module-title font-alt">Exhibitors</h1>
+            <h1 class="module-title font-alt">Featured Exhibitors</h1>
             <!--<h2 class="content-box-title font-serif text-center"><a target="_blank" href="assets/pdf/Vendor Application Packet.pdf">Want your logo here? Become A Featured Exhibitor!</a></h2>-->
               <div class="row multi-columns-row">
                 <div class="row text-center">{% for myPage in site.pages %}{% if myPage.dir contains "/vendors" %}{% if myPage.image != "" %}<div class="col-md-4 col-sm-6 col-xs-12 no-float inline-block vertical-middle"><a target="_blank" class="content-box" href="{{  myPage.link }}"><div class="content-box-image"><img src="{% if myPage.image contains "http" %}{% else %}{{ myPage.dir }}/{% endif %}{{ myPage.image }}" alt="{{ myPage.title }}" class="em-pad"/><h3 class="content-box-title font-serif">{{ myPage.title }}</h3>{{ myPage.content | markdownify }}</div></a></div>{% endif %}{% endif %}{% endfor %}</div>
@@ -115,6 +117,26 @@ layout: compress
               to lawn equipment demonstrations.
             </p>
             <p>As information becomes available, it will be posted here.</p>
+          </div>
+        </section>
+        <section class="bg-dark-30 bg-dark-50 bg-dark module-small parallax-bg top-bg" data-background="assets/images/hands-holding.jpg" id="farmers">
+          <div class="container container-front text-center">
+            <h1 class="module-title font-alt">Farmers Market</h1>
+            <p>Pickles | Jam | Salsa | Artisan Cheeses | Honey | Olive oil | Tea Greens | Coffee | Plant bulbs | Succulents | Small Garden | Art/Crafts
+              </p>
+            <h3>11AM - 3PM</h3>
+            <h3>$25 for 10x10 Space</h3>
+            <h3>Setup Time: 8:45AM - 10:45AM</h3>
+            <p>Please note that we are only accepting vendors who sell homemade products that are related to lawn/garden/food. Market vendors may need proof of liscense depending on products being sold</p>
+          </div>
+        </section>
+        <section class="module-small" id="vendors">
+          <div class="container text-center">
+            <h1 class="module-title font-alt">All Vendors</h1>
+            <p>
+             For a list of all of our current vendors check out our facebook page for an up to date listing!
+            </p>
+            <a href="https://www.facebook.com/events/359887208089200/">See All of our amazing Vendors</a>
           </div>
         </section>
         <section class="bg-dark-30 bg-dark-50 bg-dark module-small parallax-bg" data-background="assets/images/orto-in-casa-2000x1200.jpg" id="sign-up">
