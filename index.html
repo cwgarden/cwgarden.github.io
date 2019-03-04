@@ -51,6 +51,7 @@ layout: compress
           <div class="navbar-header">
             <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand section-scroll" href="#intro"><i class="cwlawngarden-leaf"></i> CW Lawn &amp; Garden</a>
           </div>
+          <!--   
           <div class="collapse navbar-collapse" id="custom-collapse">
             <ul class="nav navbar-nav navbar-right">
               <li><a class="section-scroll" href="#sponsors">Sponsors</a></li>
@@ -61,6 +62,7 @@ layout: compress
               <li><a class="section-scroll" href="#sign-up">Become a Vendor</a></li>
             </ul>
           </div>
+          -->
         </div>
       </nav>
       <section class="bg-dark-30 bg-dark showcase-page-header module parallax-bg" data-background="assets/images/Cover-01-2.jpg" id="intro">
@@ -69,16 +71,16 @@ layout: compress
             <div class="font-alt mb-30 titan-title-size-1"><img src="assets/images/ExpoLogo.svg" style="width: 500px" /></div>
             <div class="font-alt mb-40 titan-title-size-4">2019 Central Wisconsin<br />Lawn and Garden Show</div>
             <div class="font-alt mb-30 titan-title-size-2">March 16th & 17th, 2019</div>
-            <p>Saturday: 10:00AM - 6:00PM<br />
-            Sunday: 10:00AM - 3:00PM</p>
-            <p>Admission is $6 for adults or two for $10 and free for children 12 and under.</p>
-            <p>
-              Each admission enters you for a chance to win the ultimate lawn and garden package with additional tickets available to purchase to better your chances to win.
-            </p>
+            <p>The 2019 Lawn & Garden Show<br />
+              has been CANCELED.</p>
+            <p>It is with deepest regret that we must announce the cancellation of the 2019 Central Wisconsin Lawn & Garden Show. We are very sorry for any unfulfilled expectations that this may cause. 
+              If you have any questions or concerns regarding the cancellation please call 
+              <a href="tel:715-298-2726">715-298-2726.</a> </p>
             <a class="section-scroll btn btn-border-w btn-round" target="_blank" href="assets/pdf/Vendor Application Packet.pdf">Vendor Application</a>
           </div>
         </div>
       </section>
+      <!--
       <div class="main showcase-page">
         <section class="bg-dark-30 bg-dark-50 bg-dark module-small parallax-bg" data-background="assets/images/grass.jpg" id="sponsors">
           <div class="container">
@@ -91,7 +93,7 @@ layout: compress
         <section class="module-small" id="exhibitors">
           <div class="container">
             <h1 class="module-title font-alt">Featured Exhibitors</h1>
-            <!--<h2 class="content-box-title font-serif text-center"><a target="_blank" href="assets/pdf/Vendor Application Packet.pdf">Want your logo here? Become A Featured Exhibitor!</a></h2>-->
+            <h2 class="content-box-title font-serif text-center"><a target="_blank" href="assets/pdf/Vendor Application Packet.pdf">Want your logo here? Become A Featured Exhibitor!</a></h2>
               <div class="row multi-columns-row">
                 <div class="row text-center">{% for myPage in site.pages %}{% if myPage.dir contains "/vendors" %}{% if myPage.image != "" %}<div class="col-md-4 col-sm-6 col-xs-12 no-float inline-block vertical-middle"><a target="_blank" class="content-box" href="{{  myPage.link }}"><div class="content-box-image"><img src="{% if myPage.image contains "http" %}{% else %}{{ myPage.dir }}/{% endif %}{{ myPage.image }}" alt="{{ myPage.title }}" class="em-pad"/><h3 class="content-box-title font-serif">{{ myPage.title }}</h3>{{ myPage.content | markdownify }}</div></a></div>{% endif %}{% endif %}{% endfor %}</div>
               </div>
@@ -133,6 +135,7 @@ layout: compress
             </p>
             
           </div>
+          
         </section>
         <section class="module-small" id="vendors">
           <div class="container text-center">
@@ -176,6 +179,7 @@ layout: compress
             <a class="btn-round" target="_blank" href="assets/pdf/Vendor Application Packet.pdf">Apply Today!</a>
           </div>
         </section>
+        -->
         <section class="module-extra-small bg-dark">
           <div class="container">
             <div class="row">
